@@ -286,11 +286,13 @@ function add_custom_boxes()
     add_meta_box('model_brand', 'Brand', 'add_model_boxes');
 }
 
-function add_model_boxes()
+function add_model_boxes($post)
 {
     global $wp_query;
+    $value = get_post_meta($post->ID, 'model_brand', true);
+
     $args = array(
-        'post_type'      => 'brand'
+        'post_type' => 'brand'
     );
 
     $loop = new WP_Query($args);
@@ -300,13 +302,26 @@ function add_model_boxes()
         <option value="">--Please choose an option--</option>
         <?php
         while ($loop->have_posts()) : $loop->the_post();
-            var_dump(get_the_id());
-            // get_the_id() . '">' . get_the_title() 
+            if (get_the_id() == $value) {
         ?>
-            <option value="<?php echo get_the_id(); ?>"><?php echo get_the_title(); ?></option>
+                <option selected="selected" value="<?php echo get_the_id(); ?>"><?php echo get_the_title(); ?></option>
+            <?php
+            } else {
+            ?>
+                <option value="<?php echo get_the_id(); ?>"><?php echo get_the_title(); ?></option>
         <?php
+            }
+
         endwhile;
         ?>
     </select>
 <?php
+}
+
+add_action('save_post', 'save_model_metabox');
+function save_model_metabox($post_id)
+{
+    if (array_key_exists('model_brand', $_POST) && current_user_can('edit_post', $post_id)) {
+        update_post_meta($post_id, 'model_brand', $_POST['model_brand']);
+    }
 }
