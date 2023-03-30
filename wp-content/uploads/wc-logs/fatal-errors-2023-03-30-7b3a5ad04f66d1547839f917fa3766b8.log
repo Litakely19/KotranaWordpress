@@ -1,0 +1,28 @@
+2023-03-30T12:03:34+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, function "" not found or invalid function name in /var/www/html/demowp/wp-admin/includes/template.php:1445
+Stack trace:
+#0 /var/www/html/demowp/wp-admin/edit-form-advanced.php(711): do_meta_boxes()
+#1 /var/www/html/demowp/wp-admin/post.php(206): require('...')
+#2 {main}
+  thrown dans /var/www/html/demowp/wp-admin/includes/template.php à la ligne 1445
+
+2023-03-30T12:05:05+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, function "" not found or invalid function name in /var/www/html/demowp/wp-admin/includes/template.php:1445
+Stack trace:
+#0 /var/www/html/demowp/wp-admin/edit-form-advanced.php(711): do_meta_boxes()
+#1 /var/www/html/demowp/wp-admin/post.php(206): require('...')
+#2 {main}
+  thrown dans /var/www/html/demowp/wp-admin/includes/template.php à la ligne 1445
+
+2023-03-30T12:07:25+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, function "" not found or invalid function name in /var/www/html/demowp/wp-admin/includes/template.php:1445
+Stack trace:
+#0 /var/www/html/demowp/wp-admin/edit-form-advanced.php(711): do_meta_boxes()
+#1 /var/www/html/demowp/wp-admin/post.php(206): require('...')
+#2 {main}
+  thrown dans /var/www/html/demowp/wp-admin/includes/template.php à la ligne 1445
+
+2023-03-30T12:37:32+00:00 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, function "" not found or invalid function name in /var/www/html/demowp/wp-admin/includes/template.php:1445
+Stack trace:
+#0 /var/www/html/demowp/wp-admin/edit-form-advanced.php(711): do_meta_boxes()
+#1 /var/www/html/demowp/wp-admin/post.php(206): require('...')
+#2 {main}
+  thrown dans /var/www/html/demowp/wp-admin/includes/template.php à la ligne 1445
+
