@@ -1,0 +1,45 @@
+2023-03-31T06:59:14+00:00 CRITICAL Uncaught TypeError: Illegal offset type in /var/www/html/demowp/wp-content/plugins/custompage/custompage.php:363
+Stack trace:
+#0 /var/www/html/demowp/wp-includes/class-wp-hook.php(308): woo_add_custom_general_fields()
+#1 /var/www/html/demowp/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/html/demowp/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-general.php(206): do_action()
+#4 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(42): include('...')
+#5 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(52): WC_Meta_Box_Product_Data::output_tabs()
+#6 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/demowp/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/demowp/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/demowp/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown dans /var/www/html/demowp/wp-content/plugins/custompage/custompage.php à la ligne 363
+
+2023-03-31T07:49:33+00:00 CRITICAL Uncaught TypeError: Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab::get_form(): Argument #1 ($product) must be of type WC_Product, bool given, called in /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php on line 125 and defined in /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php:170
+Stack trace:
+#0 /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php(125): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab->get_form()
+#1 /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php(77): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab->render_panel()
+#2 /var/www/html/demowp/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab->Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\{closure}()
+#3 /var/www/html/demowp/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 /var/www/html/demowp/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(54): do_action()
+#6 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/demowp/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/demowp/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/demowp/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown dans /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php à la ligne 170
+
+2023-03-31T07:51:31+00:00 CRITICAL Uncaught TypeError: Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab::get_form(): Argument #1 ($product) must be of type WC_Product, bool given, called in /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php on line 125 and defined in /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php:170
+Stack trace:
+#0 /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php(125): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab->get_form()
+#1 /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php(77): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab->render_panel()
+#2 /var/www/html/demowp/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\AttributesTab->Automattic\WooCommerce\Pinterest\Admin\Product\Attributes\{closure}()
+#3 /var/www/html/demowp/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#4 /var/www/html/demowp/wp-includes/plugin.php(517): WP_Hook->do_action()
+#5 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/views/html-product-data-panel.php(54): do_action()
+#6 /var/www/html/demowp/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-product-data.php(33): include('...')
+#7 /var/www/html/demowp/wp-admin/includes/template.php(1445): WC_Meta_Box_Product_Data::output()
+#8 /var/www/html/demowp/wp-admin/edit-form-advanced.php(688): do_meta_boxes()
+#9 /var/www/html/demowp/wp-admin/post.php(206): require('...')
+#10 {main}
+  thrown dans /var/www/html/demowp/wp-content/plugins/pinterest-for-woocommerce/src/Admin/Product/Attributes/AttributesTab.php à la ligne 170
+
